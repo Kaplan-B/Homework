@@ -5,7 +5,9 @@ CONFIG -= qt
 
 SOURCES += \
         antenna.cpp \
+        lumax.cpp \
         main.cpp
 
 HEADERS += \
-    antenna.hpp
+    antenna.hpp \
+    lumax.hpp
