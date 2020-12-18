@@ -60,6 +60,7 @@ void Antenna::Show()
          << "Тип антенны Wi-Fi: " << type_WIFI << "\n"
          << "Сопротивление : " << resistance << "\n" << endl;
 }
+//геттеры
 string Antenna::Get_frequency_range()
 {
     return frequency_range;
