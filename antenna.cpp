@@ -11,7 +11,7 @@ Antenna::~Antenna()
 {
 
 }
-Antenna::Antenna(int frequency_range,int antenna_gain,string type_WIFI,int resistance)
+Antenna::Antenna(string frequency_range,int antenna_gain,string type_WIFI,int resistance)
 {   //явное использование this
     this->frequency_range = frequency_range;
     this->antenna_gain = antenna_gain;
@@ -60,7 +60,7 @@ void Antenna::Show()
          << "Тип антенны Wi-Fi: " << type_WIFI << "\n"
          << "Сопротивление : " << resistance << "\n" << endl;
 }
-//геттеры
+//геттеры описания
 string Antenna::Get_frequency_range()
 {
     return frequency_range;
@@ -76,4 +76,21 @@ string Antenna::Get_type_WIFI()
 int Antenna::Get_resistance()
 {
     return resistance;
+}
+//сеттеры описания
+void Antenna::Set_frequency_range(string frequency_range)
+{
+    this->frequency_range = frequency_range;
+}
+void Antenna::Set_antenna_gain(int antenna_gain)
+{
+    this->antenna_gain = antenna_gain;
+}
+void Antenna::Set_type_WIFI(string type_WIFI)
+{
+    this->type_WIFI = type_WIFI;
+}
+void Antenna::Set_resistance(int resistance)
+{
+    this->resistance = resistance;
 }
