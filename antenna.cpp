@@ -1,11 +1,12 @@
 #include "antenna.hpp"
 #include <iostream>
+
 Antenna::Antenna()
 {
-     frequency_range = "2400~2500";
-     antenna_gain = 9;
-     type_WIFI = "¬нешн€€ всенаправленна€";
-     resistance = 50;
+    frequency_range = "2400~2500";
+    antenna_gain = 9;
+    type_WIFI = "¬нешн€€ всенаправленна€";
+    resistance = 50;
 }
 Antenna::~Antenna()
 {
@@ -35,23 +36,23 @@ void Antenna::operator=(const Antenna &other) //перегрузка оператора
 bool Antenna::operator <(const Antenna &other)
 {
     return this->frequency_range < other.frequency_range and
-           this->antenna_gain < other.antenna_gain and
-           this->type_WIFI < other.type_WIFI and
-           this->resistance < other.resistance;
+            this->antenna_gain < other.antenna_gain and
+            this->type_WIFI < other.type_WIFI and
+            this->resistance < other.resistance;
 }
 bool Antenna::operator >(const Antenna &other)
 {
     return this->frequency_range > other.frequency_range and
-           this->antenna_gain > other.antenna_gain and
-           this->type_WIFI > other.type_WIFI and
-           this->resistance > other.resistance;
+            this->antenna_gain > other.antenna_gain and
+            this->type_WIFI > other.type_WIFI and
+            this->resistance > other.resistance;
 }
 bool Antenna::operator ==(const Antenna &other)
 {
-    return this->frequency_range == other.frequency_range and
-           this->antenna_gain == other.antenna_gain and
-           this->type_WIFI == other.type_WIFI and
-           this->resistance == other.resistance;
+    return  this->frequency_range == other.frequency_range and
+            this->antenna_gain == other.antenna_gain and
+            this->type_WIFI == other.type_WIFI and
+            this->resistance == other.resistance;
 }
 void Antenna::Show()
 {

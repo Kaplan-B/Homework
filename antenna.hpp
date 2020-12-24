@@ -25,7 +25,7 @@ public:
     bool operator < (const Antenna &other);
     bool operator > (const Antenna &other);
     bool operator == (const Antenna &other);
-    void Show();
+    virtual void Show();
 protected:
     string frequency_range;
     int antenna_gain;
